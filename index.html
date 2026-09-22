@@ -92,6 +92,7 @@
   .lang { font: 400 0.75rem/1 var(--mono); color: var(--dim); }
   .project p { margin: 0; color: var(--fg-soft); }
   .shots { display: flex; gap: 0.75rem; margin-top: 1rem; }
+  .shots.one img { width: 100%; max-width: 20rem; }
   .shots img { width: 50%; max-width: 13rem; height: auto; border: 1px solid var(--rule); border-radius: 12px; }
   .project .aside { margin-top: 0.75rem; font-size: 0.9375rem; color: var(--dim); }
   .project .aside a { color: var(--fg-soft); }
@@ -149,11 +150,14 @@
     </li>
     <li class="project">
       <div class="project-head">
-        <h3><a href="https://github.com/NikKosmo/handoff">handoff</a></h3>
-        <span class="lang">JavaScript</span>
+        <h3><a href="https://nikkosmo.github.io/handoff/">handoff</a></h3>
+        <span class="lang">live · web</span>
       </div>
-      <p>Send yourself an <code>obsidian://</code> link and have it actually open. No dependencies, 37 test cases.</p>
-      <p class="aside">Grew out of <a href="https://github.com/NikKosmo/obsidian-redirect">obsidian-redirect</a>.</p>
+      <p>Telegram strips any app link. This is how I send myself links to open Obsidian or Anki on my phone.</p>
+      <div class="shots one">
+        <img src="img/handoff-obsidian.jpg" width="480" height="427" loading="lazy" decoding="async" alt="The handoff page saying: handing off to Obsidian, with a tap-to-open fallback link.">
+      </div>
+      <p class="aside"><a href="https://nikkosmo.github.io/handoff/?to=obsidian%3A%2F%2Fopen%3Fvault%3DMyVault%26file%3DHello">Try it on your phone</a></p>
     </li>
   </ul>
 
